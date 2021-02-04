@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Identifier App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <style>
+      .alert {
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem;
+      }
+
+      .form {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Get Identifier</h3>
+        </div>
+
+        <!-- Form -->
+        <div class="container">
+          <form id="identifierform" class="form" action="/send" method="POST">
+            <label for="Number One">Optional: Request a specific identifier</label>
+            <input
+              type="text"
+              placeholder="Number"
+              class="u-full-width"
+              name="num1"
+            />
+          </form>
+        </div>
+        <form id="resetform" class="form"  action="/reset" method="POST">
+        </form>
+        </div>
+        <div class="container">
+            <input type="submit" value="Calculate" id="calc_btn" form="identifierform"/>
+            <input type="submit" value="Reset" id="reset_btn" form="resetform" />
+        </div>
+        <div class="container">
+            {{ sum }}
+            </br>
+            {{ size }}
+        </div>
+    </body>
+</html>

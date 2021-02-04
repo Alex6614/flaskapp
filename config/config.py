@@ -1,0 +1,7 @@
+username='redacted'
+password='redacted'
+account='redacted'
+warehouse='redacted'
+database='redacted'
+role='redacted'
+schema='redacted'
